@@ -12,3 +12,11 @@ const addListItem = function(e) {
 
   // Finish function here
 };
+
+const deleteVar = document.querySelector('.delete')
+console.log(deleteVar)
+const liElement = document.querySelector('li');
+const element = document.querySelector('ul')
+deleteVar.addEventListener('click', (e) => {
+  element.removeChild(liElement)
+})

@@ -21,4 +21,4 @@ liItems[2].setAttribute('class', 'highlight')
 // Remove (delete) the last paragraph
 // (starts with "Available for purchase now…")
 const element = document.querySelector('main')
-element.removeChild(pElement)
+element.removeChild(pElement) //previously declared variable

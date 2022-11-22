@@ -1,9 +1,8 @@
 // Given the <body> element as variable body,
 // access the <main> node and log to the console.
 const body = document.querySelector('body');
-for (let i = 1; i < body.childNodes.length-2; i++) {
-    console.log(body.childNodes[i]);
-}
+console.log(body.childNodes[1]);
+
 // Given the <ul> element as variable ul,
 // access <body>  and log to the console.
 const ul = document.querySelector('ul');

@@ -8,18 +8,20 @@
 
 //Make abstract event function
 function Listener (e){
-  var tagName = e.target.tagName.toLowerCase();
+  let tagName = e.target.tagName.toLowerCase();
+
     // strikethrough logic
   if (tagName === 'li')
     e.target.classList.add('done')
     e.target.parentNode.classList.add('done')
+
     //delete logic
   if (e.target.className === 'delete') 
     e.target.parentNode.remove(); 
 
 }
 
-const targetLi = document.querySelector('ul')
+const targetLi = document.querySelector('li')
 targetLi.addEventListener('click', (e) => {
   Listener(e);
 });
@@ -42,6 +44,7 @@ const addListItem = function(e) {
     Listener(e);
   });
 
+  //add newLi to the document
   document.querySelector('ul.today-list').append(newLi); 
 
   //clear the text field
